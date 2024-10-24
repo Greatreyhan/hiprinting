@@ -1,0 +1,12 @@
+import Home from "./home"
+import Aboutus from "./aboutus"
+import Service from "./service"
+import Portofolio from "./portofolio"
+import Blog from "./blog"
+import Editor from "./editor"
+import Article from "./article"
+import EditorAdmin from "./editorAdmin"
+import Admin from "./admin"
+import Login from "./Login"
+import SignUp from "./SignUp"
+export {Home, Aboutus, Service, Portofolio, Blog,  Editor, Article, Admin, EditorAdmin, Login, SignUp}
