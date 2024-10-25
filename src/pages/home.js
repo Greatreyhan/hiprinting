@@ -9,6 +9,8 @@ import { useEffect, useState } from "react";
 import { BlogCard } from "../components";
 import { onValue, ref as rtdbref } from "firebase/database";
 import { FIREBASE_STORE, FIREBASE_DB } from "../firebaseinit";
+import Slider from 'react-infinite-logo-slider'
+
 
 function Home() {
   const [dataArt, setDataArt] = useState([])
@@ -51,10 +53,29 @@ function Home() {
         <hr className="w-8/12 mx-auto mt-8" />
         {/* Clients */}
         <div className="w-10/12 mx-auto bg-slate-50 flex items-center justify-around">
-          <img className="w-2/12" src={LogoClient1} />
-          <img className="w-2/12" src={LogoClient2} />
-          <img className="w-2/12" src={LogoClient4} />
-          <img className="w-2/12" src={LogoClient5} />
+          <Slider
+            width="250px"
+            duration={40}
+            pauseOnHover={true}
+            blurBorders={false}
+            blurBorderColor={'#fff'}
+          >
+            <Slider.Slide>
+            <img className="w-32" src={LogoClient1} />
+            </Slider.Slide>
+            <Slider.Slide>
+            <img className="w-32" src={LogoClient2} />
+            </Slider.Slide>
+            <Slider.Slide>
+            <img className="w-32" src={LogoClient3} />
+            </Slider.Slide>
+            <Slider.Slide>
+            <img className="w-32" src={LogoClient4} />
+            </Slider.Slide>
+            <Slider.Slide>
+            <img className="w-32" src={LogoClient5} />
+            </Slider.Slide>
+          </Slider>
         </div>
       </div>
 
@@ -129,7 +150,7 @@ function Home() {
       <div className="bg-slate-300 pt-36 -mt-24 pb-8">
         <div className="flex justify-around w-10/12 mx-auto items-center">
           <div className="w-7/12 rounded-xl p-8">
-          <div className="w-full rounded-lg"><iframe className="rounded-lg" width="100%" height="350" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Taman%20Royal%20Jalan%20Benteng%20Betawi%20No.1,%20Tanah%20Tinggi,%20Tangerang,%20RT.005/RW.015,%20Tanah%20Tinggi,%20Kec.%20Tangerang,%20Banten,%2015119+(Repayo)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps vehicle tracker</a></iframe></div>
+            <div className="w-full rounded-lg"><iframe className="rounded-lg" width="100%" height="350" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Taman%20Royal%20Jalan%20Benteng%20Betawi%20No.1,%20Tanah%20Tinggi,%20Tangerang,%20RT.005/RW.015,%20Tanah%20Tinggi,%20Kec.%20Tangerang,%20Banten,%2015119+(Repayo)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps vehicle tracker</a></iframe></div>
           </div>
           <div className="flex-1 px-8">
             <h3 className="text-4xl capitalize font-bold">Kunjungi Kami</h3>
