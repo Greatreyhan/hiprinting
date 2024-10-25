@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const PortoCard = ({id, title, type, pict, desc}) => {
+const PortoCard = ({id, title, trademark, pict, desc}) => {
     return (
-        <Link className=' md:w-80 w-8/12 m-8 pb-8 bg-slate-100 rounded-lg' id={id}>
+        <Link to={`/product/` + id} className=' md:w-80 w-8/12 m-8 pb-8 bg-slate-100 rounded-lg' id={id}>
             <div className='w-full h-48'>
                 <img className='object-cover w-full h-full' src={pict} />
             </div>

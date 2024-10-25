@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import { Heroimage, HeroService } from "../assets/images";
 import ServiceCard from "../components/serviceCard";
 import ServiceCardRev from "../components/serviceCardRev";
@@ -20,12 +20,12 @@ const Service = () =>{
       </div>
 
       {/* Scroll Menu */}
-      <ul className="flex text-sm justify-center w-11/12 mx-auto py-4 items-stretch">
+      {/* <ul className="flex text-sm justify-center w-11/12 mx-auto py-4 items-stretch">
         <li className="flex-1 px-4 py-2 border-b-2 border-sky-800 text-sky-800 flex justify-center items-center text-center font-semibold"><a>LV & MV Panel</a></li>
         <li className="flex-1 px-4 py-2 border-b border-opacity-50 border-slate-600 text-slate-600 flex justify-center items-center text-center"><a>Electric Motor</a></li>
         <li className="flex-1 px-4 py-2 border-b border-opacity-50 border-slate-600 text-slate-600 flex justify-center items-center text-center"><a>Transformator</a></li>
         <li className="flex-1 px-4 py-2 border-b border-opacity-50 border-slate-600 text-slate-600 flex justify-center items-center text-center"><a>Components & Cable</a></li>
-      </ul>
+      </ul> */}
 
       {/* Service Detail */}
       <ServiceCard title={"Panel LV & MV Custom"} subtitle={"Pastikan distribusi listrik bisnis Anda berjalan lancar dengan tim ahli kami yang berdedikasi untuk menyelesaikan tepat waktu dengan kualitas terbaik."} description={"Kami menyediakan layanan pembuatan panel listrik tegangan rendah (LV) dan menengah (MV) secara menyeluruh, mulai dari desain, produksi, hingga perawatan berkelanjutan. Tim ahli kami merancang dan mengembangkan panel yang disesuaikan dengan kebutuhan unik bisnis Anda, memastikan setiap langkah — dari konsep awal hingga implementasi — sesuai dengan tujuan Anda."} link={"/"} image={Heroimage} />

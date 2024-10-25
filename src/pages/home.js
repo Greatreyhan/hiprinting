@@ -3,22 +3,12 @@ import { Link } from "react-router-dom";
 import { LogoClient1, LogoClient2, LogoClient3, LogoClient4, LogoClient5, IconService1, IconService2, IconService3, IconService4 } from "../assets/icons";
 import {
   Heroimage,
-  TeamsImage,
-  Miniagung,
-  Minialif,
-  Minicerry,
-  Minierdi,
-  Minitrinov,
 } from "../assets/images";
-import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
-import { BsInstagram, BsWhatsapp } from "react-icons/bs";
-import { BiLogoGmail, BiLogoLinkedin } from "react-icons/bi";
 import { BlogCard } from "../components";
 import { onValue, ref as rtdbref } from "firebase/database";
 import { FIREBASE_STORE, FIREBASE_DB } from "../firebaseinit";
-import { useTranslation } from 'react-i18next';
 
 function Home() {
   const [dataArt, setDataArt] = useState([])

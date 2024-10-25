@@ -4,7 +4,7 @@ import { Logo } from '../assets/icons';
 import LanguageSelector from './languageselector';
 
 const Navigation = () => {
-
+    
     const [handleDrop, setHandleDrop] = useState(false);
 
     const handleDropDown = () => {
@@ -32,7 +32,8 @@ const Navigation = () => {
                 <div className="md:flex justify-aroud items-center px-8 py-2 hidden">
                     <Link className={`ml-10 text-sm hover:text-sky-800 text-slate-950 ${location.pathname === '/' ? `font-bold` : ``}`} to="/">Home</Link>
                     <Link className={`ml-10 text-sm hover:text-sky-800 text-slate-950 ${location.pathname === '/service' ? `font-bold` : ``}`} to="/service">Layanan Kami</Link>
-                    <Link className={`ml-10 text-sm hover:text-sky-800 text-slate-950 ${location.pathname === '/portofolio' ? `font-bold` : ``}`} to="/portofolio">Produk</Link>
+                    <Link className={`ml-10 text-sm hover:text-sky-800 text-slate-950 ${location.pathname === '/product' ? `font-bold` : ``}`} to="/product">Produk</Link>
+                    <Link className={`ml-10 text-sm hover:text-sky-800 text-slate-950 ${location.pathname === '/blog' ? `font-bold` : ``}`} to="/blog">Blog</Link>
                     <Link className={`ml-10 text-sm hover:text-sky-800 text-slate-950 ${location.pathname === '/about-us' ? `font-bold` : ``}`} to="/about">Tentang Kami</Link>
                 </div>
                 <div className='mr-8'>
