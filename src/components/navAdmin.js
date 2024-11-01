@@ -26,9 +26,9 @@ const Navbar = () => {
             {/* List Menu */}
             <div className='pt-16 md:flex hidden text-left flex-col text-gray-800 flex-1'>
                 <a href='/admin' className='cursor-pointer hover:font-semibold hover:text-sky-800 text-sm px-6 py-2 flex items-center'><IoMdApps className='text-2xl mr-1' /><span>Dashboard</span></a>
-                <a href='/admin/product' className='cursor-pointer hover:font-semibold hover:text-sky-800 text-sm px-6 py-2 flex items-center'><MdInsertPageBreak className='text-2xl mr-1' /><span>Product</span></a>
+                {/* <a href='/admin/product' className='cursor-pointer hover:font-semibold hover:text-sky-800 text-sm px-6 py-2 flex items-center'><MdInsertPageBreak className='text-2xl mr-1' /><span>Product</span></a> */}
                 <a href='/admin/article' className='cursor-pointer hover:font-semibold hover:text-sky-800 text-sm px-6 py-2 flex items-center'><TbReportSearch className='text-2xl mr-1' /><span>Blog</span></a>
-                <a href='/admin/trademark' className='cursor-pointer hover:font-semibold hover:text-sky-800 text-sm px-6 py-2 flex items-center'><TbReportAnalytics className='text-2xl mr-1' /><span>Merek</span></a>
+                {/* <a href='/admin/trademark' className='cursor-pointer hover:font-semibold hover:text-sky-800 text-sm px-6 py-2 flex items-center'><TbReportAnalytics className='text-2xl mr-1' /><span>Merek</span></a> */}
 
             </div>
 

@@ -15,9 +15,9 @@ const Footer = () => {
       <div className="flex flex-wrap md:w-10/12 w-full px-3 md:px-0 mx-auto justify-around items-start pt-4">
         <div className="md:w-4/12 w-full text-white text-normal p-3">
           {/* <img className="w-24 mt-9" src={LogoInverted} /> */}
-          <h4 className="font-bold mt-4 text-xl">PT Repayo Mandiri</h4>
+          <h4 className="font-bold mt-4 text-xl">Hi-Printing</h4>
           <address className="mt-3">
-          Taman Royal Jalan Benteng Betawi No.1, Tanah Tinggi, Tangerang, RT.005/RW.015, Tanah Tinggi, Kec. Tangerang, Banten, 15119
+          KKIB Universitas Diponegoro, Tembalang, Semarang City, Central Java 50275
           </address>
           <div className="flex justify-start gap-3 mt-6">
             <a
@@ -65,9 +65,9 @@ const Footer = () => {
           </Link>
           <Link
             className="mt-3 text-gray-300 hover:text-white"
-            to="/portofolio"
+            to="/blog"
           >
-            Produk
+            Blog
           </Link>
           <Link className="mt-3 text-gray-300 hover:text-white" to="/about">
              Tentang Kami
@@ -82,66 +82,66 @@ const Footer = () => {
             target="_blank"
             href=""
           >
-            LV & MV Panel
+            Print Kertas
           </a>
           <a
             className="mt-3 text-gray-300 hover:text-white"
             target="_blank"
             href=""
           >
-            Electric Motor
+            Cetak Sertifikat
           </a>
           <a
             className="mt-3 text-gray-300 hover:text-white"
             target="_blank"
             href=""
           >
-            Transformator
+            Foto Copy
           </a>
           <a
             className="mt-3 text-gray-300 hover:text-white"
             target="_blank"
             href=""
           >
-            Component & Cable
+            Scan Kertas
           </a>
         </div>
         <div className="md:flex-1 w-4/12 text-white flex flex-col p-2 mt-8 md:pl-10 pl-0">
           <h5 className="mt-1 font-bold text-xl">
-            Supplier
+            Persyaratan
           </h5>
           <a
             className="mt-3 text-gray-300 hover:text-white"
             target="_blank"
             href=""
           >
-            Schneider
+            Pengiriman
           </a>
           <a
             className="mt-3 text-gray-300 hover:text-white"
             target="_blank"
             href=""
           >
-            ABB
+            Harga
           </a>
           <a
             className="mt-3 text-gray-300 hover:text-white"
             target="_blank"
             href=""
           >
-            Omron
+            Kerja Sama
           </a>
           <a
             className="mt-3 text-gray-300 hover:text-white"
             target="_blank"
             href=""
           >
-            Hager
+            Kertas
           </a>
         </div>
       </div>
       <p className="text-center mt-8 text-white text-sm">
-        © PT Repayo Mandiri
+        © PT Higenncy Kolaborasi Bersama
       </p>
     </div>
   );

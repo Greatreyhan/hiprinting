@@ -63,14 +63,13 @@ const Blog = () => {
           <form className="w-6/12">
             <input value={queryText} onChange={(e)=>handleQuery(e)} className="w-full px-4 py-3 rounded-full" type="text" placeholder={'Cari Artikel'} />
           </form>
-          <button className="bg-sky-800 rounded-full text-white p-2 ml-2 text-3xl font-semibold"><AiOutlineSearch className="text-white w-8 h-8" /></button>
+          <button className="bg-rose-800 rounded-full text-white p-2 ml-2 text-3xl font-semibold"><AiOutlineSearch className="text-white w-8 h-8" /></button>
         </div>
         <div  className="flex gap-4 justify-center my-6 flex-wrap">
-          <span onClick={()=>handleTag('semua')} className={`px-4 rounded-full text-center cursor-pointer ${tagKey === "semua" ? "text-white bg-sky-800" : "border-sky-800 text-sky-800"} py-1.5 border  w-36 font-semibold  text-sm`} >All</span>
-          <span onClick={()=>handleTag('panel')} className={`px-4 rounded-full text-center cursor-pointer ${tagKey === "panel" ? "text-white bg-sky-800" : "border-sky-800 text-sky-800"} py-1.5 border  w-36 font-semibold  text-sm`} >Panel Listrik</span>
-          <span onClick={()=>handleTag('motor')} className={`px-4 rounded-full text-center cursor-pointer ${tagKey === "motor" ? "text-white bg-sky-800" : "border-sky-800 text-sky-800"} py-1.5 border w-36 font-semibold text-sm`} >Motor Listrik</span>
-          <span onClick={()=>handleTag('trafo')} className={`px-4 rounded-full text-center cursor-pointer ${tagKey === "trafo" ? "text-white bg-sky-800" : "border-sky-800 text-sky-800"} py-1.5 border w-36 font-semibold text-sm`} >Transformator</span>
-          <span onClick={()=>handleTag('komponen')} className={`px-4 rounded-full text-center cursor-pointer ${tagKey === "komponen" ? "text-white bg-sky-800" : "border-sky-800 text-sky-800"} py-1.5 border w-36 font-semibold text-sm`} >Komponen</span>
+          <span onClick={()=>handleTag('semua')} className={`px-4 rounded-full text-center cursor-pointer ${tagKey === "semua" ? "text-white bg-rose-800" : "border-rose-800 text-rose-800"} py-1.5 border  w-36 font-semibold  text-sm`} >All</span>
+          <span onClick={()=>handleTag('kertas')} className={`px-4 rounded-full text-center cursor-pointer ${tagKey === "kertas" ? "text-white bg-rose-800" : "border-rose-800 text-rose-800"} py-1.5 border  w-36 font-semibold  text-sm`} >Kertas</span>
+          <span onClick={()=>handleTag('pencetakan')} className={`px-4 rounded-full text-center cursor-pointer ${tagKey === "pencetakan" ? "text-white bg-rose-800" : "border-rose-800 text-rose-800"} py-1.5 border w-36 font-semibold text-sm`} >Pencetakan</span>
+          <span onClick={()=>handleTag('teknologi')} className={`px-4 rounded-full text-center cursor-pointer ${tagKey === "teknologi" ? "text-white bg-rose-800" : "border-rose-800 text-rose-800"} py-1.5 border w-36 font-semibold text-sm`} >Teknologi</span>
         </div>
       </div>
 
