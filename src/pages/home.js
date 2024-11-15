@@ -30,8 +30,8 @@ function Home() {
   return (
     <div className="bg-slate-50 overflow-x-hidden">
       {/* Header Desktop */}
-      <div className=" text-center pt-28 pb-8 flex w-10/12 mx-auto items-center">
-        <div className="text-left flex-1 mx-16">
+      <div className=" text-center pt-28 pb-8 flex flex-col md:flex-row w-10/12 mx-auto items-center">
+        <div className="text-left flex-1 md:mx-16 mt-4 md:mt-0 md:order-1 order-2">
           <h1 className="uppercase text-4xl text-slate-950 font-bold">Hi-Printing</h1>
           <h2 className="capitalize text-2xl text-slate-800 font-light leading-loose">By Higenncy</h2>
           <p className="mx-auto text-sm mt-2 text-slate-700 leading-loose">Menyediakan solusi percetakan digital berkualitas untuk mendukung kebutuhan pribadi dan komunitas Anda. Kami hadir dengan produk terbaik dan layanan profesional untuk memastikan setiap cetakan memenuhi harapan dan memberikan hasil yang memuaskan.</p>
@@ -41,7 +41,7 @@ function Home() {
             <a href="https://wa.me/+6285643518494" className="bg-slate-50 text-slate-950 px-6 py-2 rounded-full mx-4">Hubungi Kami</a>
           </div>
         </div>
-        <div className="mt-8 flex-1 h-96 mx-auto">
+        <div className="mt-8 flex-1 h-96 mx-auto md:order-2 order-1">
           <img className="w-full h-full object-cover rounded-xl" src={Heroimage} />
         </div>
 
@@ -54,7 +54,7 @@ function Home() {
         <p className="mx-auto w-5/12 text-center text-slate-700 mt-2 text-sm leading-loose">Kami bekerja sama dengan pemasok terpercaya yang menyediakan bahan dan komponen berkualitas tinggi, memastikan setiap produk yang kami tawarkan memenuhi standar terbaik dalam percetakan digital. </p>
         <hr className="w-8/12 mx-auto mt-8" /> */}
         {/* Clients */}
-        <div className="w-10/12 mx-auto bg-slate-50 flex items-center justify-around">
+        <div className=" w-full mx-auto bg-slate-50 flex items-center justify-around">
           <Slider
 
             duration={40}
@@ -88,13 +88,13 @@ function Home() {
       </div>
 
       {/* Our service */}
-      <div className="w-10/12 mx-auto rounded-lg px-12 py-10">
+      <div className="md:w-10/12 w-full mx-auto rounded-lg px-12 py-10">
         <h2 className="text-center text-4xl font-bold capitalize text-slate-800 pt-24">Layanan Kami</h2>
-        <p className="mx-auto w-7/12 text-center text-slate-700 mt-2 leading-loose text-sm">Dengan teknologi pencetakan digital terkini, kami menawarkan layanan cetak yang berkualitas tinggi, cepat, dan efisien untuk memenuhi berbagai kebutuhan Anda.</p>
+        <p className="mx-auto md:w-7/12 text-center text-slate-700 mt-2 leading-loose text-sm">Dengan teknologi pencetakan digital terkini, kami menawarkan layanan cetak yang berkualitas tinggi, cepat, dan efisien untuk memenuhi berbagai kebutuhan Anda.</p>
 
         <div className="flex flex-wrap mt-12">
 
-          <div className="flex items-start gap-x-4 w-6/12 mt-8 px-4">
+          <div className="flex items-start md:gap-y-0 gap-y-4 gap-x-4 w-full md:w-6/12 mt-8 px-4">
             <div className="bg-green-700 p-3 rounded-full">
               <MdAttachMoney className="text-3xl text-white" />
             </div>
@@ -104,7 +104,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="flex items-start gap-x-4 w-6/12 mt-8 px-4">
+          <div className="flex items-start gap-x-4 w-full md:w-6/12 mt-8 px-4">
             <div className="bg-orange-700 p-3 rounded-full">
               <MdHighQuality className="text-3xl text-white" />
             </div>
@@ -114,7 +114,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="flex items-start gap-x-4 w-6/12 mt-8 px-4">
+          <div className="flex items-start gap-x-4 w-full md:w-6/12 mt-8 px-4">
             <div className="bg-teal-700 p-3 rounded-full">
               <TbTruckDelivery className="text-3xl text-white" />
             </div>
@@ -124,7 +124,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="flex items-start gap-x-4 w-6/12 mt-8 px-4">
+          <div className="flex items-start gap-x-4 w-full md:w-6/12 mt-8 px-4">
             <div className="bg-amber-700 p-3 rounded-full">
               <Md24Mp className="text-3xl text-white" />
             </div>
@@ -164,8 +164,8 @@ function Home() {
 
   {/* Alamat Maps Perusahaan */ }
   <div className="pt-36 -mt-24 pb-8">
-    <div className="flex justify-around w-10/12 mx-auto items-center">
-      <div className="w-7/12 rounded-xl p-8">
+    <div className="flex md:flex-row flex-col justify-around md:w-10/12 w-full mx-auto items-center">
+      <div className="md:w-7/12 w-full rounded-xl p-8">
         <div className="w-full rounded-lg"><iframe className="rounded-xl" width="100%" height="400" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=XC3R+FJC,%20Tembalang,%20Semarang%20City,%20Central%20Java%2050275+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps tracker sport</a></iframe></div>
       </div>
       <div className="flex-1 px-8">
@@ -176,9 +176,9 @@ function Home() {
 
 
     {/* CTA Whatsapp */}
-    <div className="bg-gradient-to-r from-sky-800 to-indigo-900 w-10/12 mx-auto my-24 p-14 rounded-3xl">
+    <div className="bg-gradient-to-r from-sky-800 to-indigo-900 md:w-10/12 mx-4 md:mx-auto my-24 p-14 rounded-3xl">
       <h3 className="text-4xl text-white capitalize font-semibold">Punya Permintaan Khusus?<br /> <span className="text-2xl">Kami Siap Membantu!</span></h3>
-      <p className="text-sm font-light text-slate-100 mt-2 w-7/12 leading-loose">Tim kami siap berdiskusi dan memberikan solusi terbaik yang sesuai dengan kebutuhan Anda. Klik tombol di bawah ini untuk mengirimkan permintaan Anda langsung kepada kami.</p>
+      <p className="text-sm font-light text-slate-100 mt-2 md:w-7/12 leading-loose">Tim kami siap berdiskusi dan memberikan solusi terbaik yang sesuai dengan kebutuhan Anda. Klik tombol di bawah ini untuk mengirimkan permintaan Anda langsung kepada kami.</p>
       <a href="https://wa.me/+6285643518494" className="bg-slate-50 inline-block text-slate-950 px-6 py-2 rounded-xl mt-5">Hubungi Kami</a>
     </div>
 

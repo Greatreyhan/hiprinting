@@ -6,8 +6,8 @@ const ServiceCardRev = ({title, subtitle, description, link, image}) => {
   return (
     <div className='bg-slate-100'>
         
-        <div className="flex w-10/12 gap-x-8 mx-auto py-8 items-center">
-          <div className="flex-1 px-8 order-2">
+        <div className="flex md:flex-row flex-col gap-x-8 mx-auto md:w-10/12 py-8 items-center">
+          <div className="flex-1 px-8 order-2 ">
             {/* <img className="bg-rose-700 p-3 rounded-full" src={IconService1} /> */}
             <h2 className="mt-4 text-3xl font-bold text-slate-900 leading-relaxed">{title}</h2>
             <p className="mt-2 font-medium text-slate-800 leading-relaxed">{subtitle}</p>

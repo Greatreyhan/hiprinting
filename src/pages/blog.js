@@ -54,13 +54,13 @@ const Blog = () => {
       {/* Title Search */}
       <div className="w-full text-center pt-32">
         <h2 className="text-4xl font-medium text-slate-900">Read More Articles</h2>
-        <p className="text-sm font-light text-slate-800 mt-2 w-4/12 mx-auto">Our team group of creative people, consisting of various backgrounds and specific abilities that are divided into several divisions.</p>
+        <p className="text-sm font-light text-slate-800 mt-2 md:w-4/12 mx-auto">Our team group of creative people, consisting of various backgrounds and specific abilities that are divided into several divisions.</p>
       </div>
 
       {/* Search Feature */}
       <div className="w-10/12 mx-auto flex-col items-center mt-8 justify-center">
         <div  className="w-full flex justify-center">
-          <form className="w-6/12">
+          <form className="md:w-6/12 w-10/12">
             <input value={queryText} onChange={(e)=>handleQuery(e)} className="w-full px-4 py-3 rounded-full" type="text" placeholder={'Cari Artikel'} />
           </form>
           <button className="bg-rose-800 rounded-full text-white p-2 ml-2 text-3xl font-semibold"><AiOutlineSearch className="text-white w-8 h-8" /></button>

@@ -9,4 +9,6 @@ import EditorAdmin from "./editorAdmin"
 import Admin from "./admin"
 import Login from "./Login"
 import SignUp from "./SignUp"
-export {Home, Aboutus, Service, Product, Blog,  Editor, Article, Admin, EditorAdmin, Login, SignUp}
+import Register from "./Register"
+import InsertFile from "./insertFile"
+export {Home, Aboutus, Service, Product, Blog,  Editor, Article, Admin, EditorAdmin, Login, SignUp, Register, InsertFile}

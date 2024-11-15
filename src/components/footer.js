@@ -9,7 +9,7 @@ const Footer = () => {
   // Gather location information
   const location = useLocation()
 
-  if(location.pathname.includes('/admin')) return(null)
+  if(location.pathname.includes('/profile')) return(null)
   return (
     <div className="w-full mx-auto bg-gray-950">
       <div className="flex flex-wrap md:w-10/12 w-full px-3 md:px-0 mx-auto justify-around items-start pt-4">

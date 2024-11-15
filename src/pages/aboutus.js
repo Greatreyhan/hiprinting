@@ -13,11 +13,11 @@ function Aboutus() {
       
       {/* Hero Image */}
       <div className="w-full">
-        <div className="w-10/12 mx-auto flex pt-32 items-center">
+        <div className="w-10/12 mx-auto flex md:flex-row flex-col pt-32 items-center">
           <div className="flex-1 flex justify-start relative">
-            <img className="w-8/12" src={HeroAbout} />
+            <img className="md:w-8/12" src={HeroAbout} />
           </div>
-          <div className="flex-1">
+          <div className="flex-1 md:mt-0 mt-8 ">
             <p className="text-3xl text-slate-900">“<span className="font-bold">Di Hi-Printing, kami tidak hanya mencetak; </span>kami membantu mewujudkan ide dan impian Anda dalam bentuk yang nyata.​”</p>
             <p className="mt-4 text-slate-700">Hi-Printing adalah penyedia layanan percetakan digital terkemuka yang berkomitmen untuk memberikan solusi cetak berkualitas tinggi untuk berbagai kebutuhan Anda. Berdiri dengan visi untuk menghadirkan inovasi dan efisiensi dalam dunia percetakan, kami hadir untuk memenuhi segala permintaan, baik untuk keperluan pribadi maupun komunitas.</p>
           </div>
@@ -40,10 +40,10 @@ function Aboutus() {
       </div> */}
 
       {/* FAQ */}
-      <div className="my-32 flex items-start w-10/12 mx-auto">
+      <div className="my-32 flex md:flex-row flex-col items-start w-10/12 mx-auto">
         <div className="flex-1">
           <h2 className="font-medium text-4xl text-slate-800">FAQ</h2>
-          <p className="mt-2 text-sm text-slate-700 w-8/12">Temukan jawaban untuk pertanyaan-pertanyaan umum seputar produk dan layanan kami</p>
+          <p className="mt-2 text-sm text-slate-700 md:w-8/12">Temukan jawaban untuk pertanyaan-pertanyaan umum seputar produk dan layanan kami</p>
         </div>
         <div className="flex-1">
           <div className="mt-4 py-2 border-b-2 border-slate-800 text-slate-800 flex justify-between items-center">

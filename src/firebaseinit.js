@@ -6,14 +6,14 @@ import { getDatabase } from "firebase/database"
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAJY0JmN6fWe3JsFPRXKWHmt6Vzcx6oUvw",
-  authDomain: "repayomandiri.firebaseapp.com",
-  databaseURL: "https://repayomandiri-default-rtdb.firebaseio.com",
-  projectId: "repayomandiri",
-  storageBucket: "repayomandiri.appspot.com",
-  messagingSenderId: "682762134492",
-  appId: "1:682762134492:web:c893cc24f829dcfbcb6519",
-  measurementId: "G-4WSGFXHF6X"
+  apiKey: "AIzaSyAX_L6pvx0sLVzRMvDGo7b9OkP6nWGua14",
+  authDomain: "hiprintingid.firebaseapp.com",
+  databaseURL: "https://hiprintingid-default-rtdb.firebaseio.com",
+  projectId: "hiprintingid",
+  storageBucket: "hiprintingid.firebasestorage.app",
+  messagingSenderId: "483625916572",
+  appId: "1:483625916572:web:b35972c59e3dc79a7af559",
+  measurementId: "G-VP141W58LC"
 };
 
 // Initialize Firebase
