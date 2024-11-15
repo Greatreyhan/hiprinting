@@ -64,7 +64,7 @@ const OrderEditor = () => {
                             console.log(responseFile.data)
 
                             if (responseFile.status === 201) {
-            
+                                navigate('/profile/order')
                             }
                         } catch (error) {
                             console.error("Error Create File", error);

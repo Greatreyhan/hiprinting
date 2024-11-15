@@ -42,11 +42,6 @@ const Navigation = () => {
         }
     }
 
-    const handleLogOut = async () =>{
-        Cookies.remove('token');
-        setUser({})
-    }
-
     useEffect(() => {
         fetchData()
     }, [])
@@ -67,7 +62,7 @@ const Navigation = () => {
                     <Link className={`ml-10 text-sm hover:text-rose-800 text-slate-950 ${location.pathname === '/about-us' ? `font-bold` : ``}`} to="/about">Tentang Kami</Link>
                 </div>
                 <div className='md:block hidden flex items-center mr-8'>
-                    <Link onClick={user ? handleLogOut : null} to={"/register"} className='text-rose-900 border-rose-900 border hover:bg-rose-800 hover:text-white px-6 py-2 text-sm rounded-xl capitalize'>{user? user.username:"Sign Up"}</Link>
+                    <Link to={user ? "/profile" : "/register"} className='text-white bg-rose-900 border hover:bg-rose-800 hover:text-white px-6 py-2 text-sm rounded-xl capitalize'>{user? 'Hello, '+ user.username + '!':"Sign Up"}</Link>
                 </div>
                 <div className="md:hidden flex items-center">
                     <a href="#" onClick={handleNav}>

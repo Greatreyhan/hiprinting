@@ -36,7 +36,7 @@ const Profile = () => {
         if (responseOrders.status === 200) {
           console.log(responseOrders.data.data[0])
           setOrder(responseOrders.data.data)
-          setTransaction(responseOrders.data.data.reduce((a,c) => a + c.price, 0))
+          setTransaction(responseOrders.data.data.reduce((a,c) => a + (c.price+c.delivery_price), 0))
           setOrderDone(responseOrders.data.data.filter((o) => {return o.status ===  'PROCESS'}))
         }
       }

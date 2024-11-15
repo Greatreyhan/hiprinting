@@ -20,6 +20,7 @@ import Profile from './pages/profile';
 import LayoutUser from './components/layoutUser';
 import ProfileOrder from './pages/profileOrder';
 import OrderEditor from './pages/orderEditor';
+import ProfileData from './pages/profileData';
 
 function App() {
 
@@ -41,6 +42,7 @@ function App() {
           <Route path="/profile" element={<LayoutUser><Profile /></LayoutUser>}></Route>
           <Route path="/profile/order" element={<LayoutUser><ProfileOrder /></LayoutUser>}></Route>
           <Route path="/profile/add-order" element={<LayoutUser><OrderEditor /></LayoutUser>}></Route>
+          <Route path="/profile/data" element={<LayoutUser><ProfileData /></LayoutUser>}></Route>
 
           <Route path="/admin/product" element={<LayoutUser><ProductAdmin /></LayoutUser>}></Route>
           <Route path="/admin/add-product" element={<LayoutUser><ProductEditor /></LayoutUser>}></Route>

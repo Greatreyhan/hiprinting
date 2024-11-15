@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useFirebase } from "../FirebaseContext";
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
   const [email, setEmail] = useState("");

@@ -9,7 +9,6 @@ const ProfileOrder = () => {
   const [user, setUser] = useState({})
   const [order, setOrder] = useState([])
 
-
   const fetchData = async () => {
     const token = Cookies.get('token');
     try {
@@ -33,7 +32,6 @@ const ProfileOrder = () => {
           }
         });
         if (responseOrders.status === 200) {
-          console.log(responseOrders.data)
           setOrder(responseOrders.data.data)
         }
       }

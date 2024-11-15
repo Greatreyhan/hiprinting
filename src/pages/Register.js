@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios'
-import { Navigate } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { Hero2, Heroimage } from "../assets/images";
 import Cookies from 'js-cookie';
 import { MdPerson, MdMail, MdWhatsapp, MdPassword} from "react-icons/md";
@@ -151,8 +151,9 @@ const Register = () => {
                 type="submit"
                 className="w-full px-4 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in bg-sky-800 shadow-lg hover:shadow-none hover:bg-blue-900 focus:outline-none focus:ring-2"
               >
-                <span className="w-full">Login</span>
+                <span className="w-full">Register</span>
               </button>
+              <p className="text-center text-sm mt-4">Sudah memiliki akun?</p><Link className="text-center text-sm underline text-blue-900" to="/login">Login di sini</Link>
             </form>
           </div>
         </div>

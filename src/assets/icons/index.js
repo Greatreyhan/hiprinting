@@ -11,5 +11,6 @@ import IconService1 from "./service1.png"
 import IconService2 from "./service2.png"
 import IconService3 from "./service3.png"
 import IconService4 from "./service4.png"
+import Avatar from "./avatar.png"
 
-export {Logo, LogoInverted, LogoClient1, LogoClient2, LogoClient3, LogoClient4, LogoClient5, LogoClient6, LogoClient7, IconService1, IconService2, IconService3, IconService4}
+export {Logo, LogoInverted, LogoClient1, LogoClient2, LogoClient3, LogoClient4, LogoClient5, LogoClient6, LogoClient7, IconService1, IconService2, IconService3, IconService4, Avatar}

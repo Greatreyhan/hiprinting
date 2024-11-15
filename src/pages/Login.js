@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { redirect, Navigate } from "react-router-dom";
-import { Hero2, Heroimage } from "../assets/images";
+import { Navigate } from "react-router-dom";
+import { Heroimage } from "../assets/images";
 import axios from "axios";
 import Cookies from 'js-cookie';
 
@@ -23,7 +23,6 @@ const Login = () => {
           }
         });
         if (response.status === 200) {
-          console.log('redirect')
           setUser(true)
         }
       }
@@ -66,7 +65,7 @@ const Login = () => {
   };
 
   if (user) {
-    return <Navigate to="/" />;
+    return <Navigate to="/profile" />;
   }
 
   return (
